@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Single</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main Content */
+.blog-content {
+    margin: 20px 0;
+}
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.tags span {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Comments Section */
+.comments-section {
+    margin: 20px 0;
+}
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.comment-form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Author Section */
+.author-section {
+    margin: 20px 0;
+    text-align: center;
+}
+.author-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-columns li {
+    margin: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Blog Single</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog-content">
+      <div class="container">
+          <h2>Improve design with typography?</h2>
+          <!-- Blog Image -->
+          <img src="https://via.placeholder.com/800x400.png?text=Blog+Image" alt="Teamwork" class="blog-image">
+          <p>
+              A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.
+          </p>
+          <p>
+              The right use of typography can improve the emotional connection of ideas to the reader and the overall readability of content. We usually learn to focus on font and alignment.
+          </p>
+          <div class="tags">
+              <span>Design</span>
+              <span>Lifestyle</span>
+              <span>Travel</span>
+          </div>
+      </div>
+  </main>
+
+  <!-- Comments Section -->
+  <section class="comments-section">
+      <div class="container">
+          <h3>Comments</h3>
+          <div class="comment">
+              <p><strong>Philips:</strong> Some variations of typography are amazing to learn in this article.</p>
+          </div>
+          <form class="comment-form">
+              <input type="text" placeholder="Your Name" required>
+              <textarea placeholder="Write your comment" required></textarea>
+              <button type="submit">Post Comment</button>
+          </form>
+      </div>
+  </section>
+
+  <!-- Author Section -->
+  <section class="author-section">
+      <div class="container">
+          <!-- Author Image -->
+          <img src="https://via.placeholder.com/100.png?text=Author+Image" alt="Author" class="author-image">
+          <h4>Author: Jane Doe</h4>
+          <p>Creative designer and writer specializing in typography.</p>
+      </div>
+  </section>
+
+    <!-- Author Section -->
+    <section class="author-section">
+        <div class="container">
+            <img src="author.jpg" alt="Author" class="author-image">
+            <h4>Author: Jane Doe</h4>
+            <p>Creative designer and writer specializing in typography.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Blog</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Subscribe</h4>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
