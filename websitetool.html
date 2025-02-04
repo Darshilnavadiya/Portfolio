@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites & Tools For Every Web Developer Blog | Personal Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97dd6ccb04.js" crossorigin="anonymous"></script>
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/Home/Logo In Black.png">
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsiveblog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h1, h2 {
+    font-size: 15px !important; /* Set h1 and h2 to 15px */
+}
+
+p {
+    font-size: 12px !important; /* Set p to 12px */
+}
+        body {
+
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+        }
+
+        main {
+            max-width: 1500px;
+            font-family: 'Poppins', sans-serif !important;
+            line-height: 1.8;
+            margin: 20px auto;
+            /* margin-top: 70px; */
+            padding: 20px;
+            background: black;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            margin: 20px 0;
+            padding: 20px;
+            background: grey;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: white;
+            font-size: 3em;
+            /* Increase font size */
+            text-align: center;
+            /* Center the title */
+            margin-bottom: 20px;
+            /* Add space below */
+            font-family: 'Playfair Display', serif;
+            /* Add a stylish font */
+        }
+
+        .timing {
+            color: white;
+            text-align: center;
+            /* Center align like h2 */
+            /* margin-bottom: 20px; Add space below */
+            font-family: 'Playfair Display', serif;
+            /* Use the same stylish font */
+            font-weight: bold;
+            /* Ensure it stands out */
+        }
+
+        .blog-post p {
+            line-height: 1.8;
+            /* Improve readability */
+            font-size: 1.25em;
+            /* Increase font size */
+            margin-bottom: 20px;
+            /* Add spacing between paragraphs */
+            font-family: 'Georgia', serif;
+            /* Add an elegant font */
+            color: whitesmoke;
+            /* Soften the text color */
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        blockquote {
+            border-left: 6px solid #35424a;
+            font-size: 1.25em;
+            /* Match blog text size */
+            line-height: 1.8;
+            color: #444;
+            /* Darker text for contrast */
+            font-family: 'Georgia', serif;
+            background: #f4f4f4;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .comments-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: black;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comment-form textarea {
+            resize: none;
+            height: 80px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .comment-form button {
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .comment-form button:hover {
+            background: #2c3e50;
+        }
+
+        .blog-image-wrapper {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Add a semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .overlay-text h2 {
+            font-size: 2em;
+            /* Adjust font size */
+            font-family: 'Playfair Display', serif;
+            /* Stylish font */
+            margin: 0;
+            color: #fff;
+            /* White text color */
+        }
+
+        .code-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #007BFF;
+            padding: 10px;
+            margin: 20px 0;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+            color: black;
+        }
+
+        .header-image-wrapper {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header-content p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-family: 'Georgia', serif;
+        }
+
+        main {
+            padding: 40px 0;
+            /* Adjust padding as needed */
+            margin: 0;
+            /* Remove margin to allow full width */
+            width: 100%;
+            /* Ensure main takes full width */
+        }
+
+        /* Optional: Add space on the sides */
+        @media (min-width: 1200px) {
+            section {
+                padding-left: 20px;
+                padding-right: 40px;
+            }
+        }
+
+        section {
+            margin-bottom: 50px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            /* Full width */
+            box-sizing: border-box;
+            /* Include padding in the width */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            max-width: 1200px;
+            /* Optional: Set a max-width for larger screens */
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #6a11cb;
+            padding-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2575fc;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6a11cb;
+            text-decoration: underline;
+        }
+
+        /* Code Styling */
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Default styles for .content-section */
+        .content-section {
+            font-family: 'Roboto Slab', serif;
+            font-size: 15px;
+        }
+
+        /* Adjust font size for tablets */
+        @media (max-width: 768px) {
+            .content-section {
+                font-size: 16px;
+            }
+
+            .content-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .content-section p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Adjust font size for mobile devices */
+        @media (max-width: 480px) {
+            .content-section {
+                font-size: 14px;
+            }
+
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section p {
+                font-size: 0.9rem;
+            }
+        }
+        a {
+    color: black; /* Set link color to black */
+    font-weight: bold; /* Make link text bold */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+a:hover {
+    text-decoration: none; /* Ensure default underline is removed on hover */
+}
+
+a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position the underline */
+    left: 0; /* Start from the left */
+    bottom: -2px; /* Adjust distance from text */
+    width: 0; /* Start with no width */
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+a:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+    </style>
+</head>
+<body>
+     
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
+
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+        <!-- Logo -->
+        <a class="logo" href="index.html">
+            <img src="assets/images/darshil-high-resolution-logo-grayscale-transparent (1).png" alt="logo"
+                style="width: 140px; height: 60px; margin-left: 65px;" />
+        </a>
+        <!-- Logo End -->
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">about</a>
+            <a href="index.html">service</a>
+            <a href="index.html">portfolio</a>
+            <a href="index.html">testimonials</a>
+            <a href="blog.html" target="_blank">blogs</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+
+    </header>
+    <!-------------------- Header Area (End) --------------------> 
+    
+    <main>
+        <div class="header-image-wrapper">
+            <img src="assets/images/Blogs/website Tools.png" alt="Modern Web Development" class="header-image" style="max-width: 100%; margin-top: 50px; height: 50%;">
+            <!-- <div class="header-content content-section" style="color: black;">
+                <h1>Modern Web Development: A Complete Guide to Building Scalable Websites</h1>
+                <p>Learn how to create fast, scalable, and user-friendly websites using the latest tools and technologies.</p>
+            </div> -->
+        </div>
+    
+        <section class="content-section">
+            <h2>What is Modern Web Development?</h2>
+            <p>Modern web development focuses on building websites and applications that are fast, scalable, and optimized for all devices. It involves using the latest tools, frameworks, and best practices to deliver a seamless user experience. From <a href="https://reactjs.org/" target="_blank">React</a> for frontend development to <a href="https://nodejs.org/" target="_blank">Node.js</a> for backend, modern web development leverages cutting-edge technologies to create dynamic and efficient web applications.</p>
+        </section>
+    
+        <section class="content-section">
+            <h2>Why is Modern Web Development Important?</h2>
+            <ul>
+                <li><strong>Enhanced User Experience</strong>: Modern websites are designed to be intuitive, fast, and accessible, ensuring users stay engaged. Tools like <a href="https://www.figma.com/" target="_blank">Figma</a> help in designing user-friendly interfaces.</li>
+                <li><strong>Improved Performance</strong>: Optimized code and efficient frameworks like <a href="https://nextjs.org/" target="_blank">Next.js</a> lead to faster load times and better performance.</li>
+                <li><strong>Cross-Platform Compatibility</strong>: Websites must work seamlessly on desktops, tablets, and mobile devices. Frameworks like <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> make responsive design easier.</li>
+                <li><strong>SEO and Accessibility</strong>: Modern development practices improve search engine rankings and make websites accessible to all users, including those with disabilities. Tools like <a href="https://wave.webaim.org/" target="_blank">WAVE</a> help in accessibility testing.</li>
+            </ul>
+        </section>
+    
+        <section class="content-section">
+            <h2>Essential Websites & Tools for Every Web Developer</h2>
+    
+            <h3>1. Code Editors & IDEs</h3>
+            <p>A good code editor is the backbone of any developer's toolkit. Here are some of the best:</p>
+            <ul>
+                <li><a href="https://code.visualstudio.com/" target="_blank"><strong>Visual Studio Code (VS Code)</strong></a>: A free, open-source code editor by Microsoft with a massive library of extensions for customization.</li>
+                <li><a href="https://www.sublimetext.com/" target="_blank"><strong>Sublime Text</strong></a>: A lightweight, fast, and highly customizable text editor.</li>
+                <li><a href="https://atom.io/" target="_blank"><strong>Atom</strong></a>: GitHub’s open-source editor with a strong community and plugin ecosystem.</li>
+                <li><a href="https://www.jetbrains.com/webstorm/" target="_blank"><strong>WebStorm</strong></a>: A powerful IDE for JavaScript, TypeScript, and modern web development.</li>
+            </ul>
+    
+            <h3>2. Frontend Development Tools</h3>
+            <p>Frontend development is all about creating beautiful, responsive, and user-friendly interfaces. These tools will help you achieve that:</p>
+            <ul>
+                <li><a href="https://getbootstrap.com/" target="_blank"><strong>Bootstrap</strong></a>: A popular CSS framework for building responsive websites quickly.</li>
+                <li><a href="https://tailwindcss.com/" target="_blank"><strong>Tailwind CSS</strong></a>: A utility-first CSS framework for rapid UI development.</li>
+                <li><a href="https://sass-lang.com/" target="_blank"><strong>Sass</strong></a>: A CSS preprocessor that adds powerful features like variables, nesting, and mixins.</li>
+                <li><a href="https://reactjs.org/" target="_blank"><strong>React.js</strong></a>, <a href="https://vuejs.org/" target="_blank"><strong>Vue.js</strong></a>, <a href="https://angular.io/" target="_blank"><strong>Angular</strong></a>: Popular JavaScript frameworks for building dynamic and interactive user interfaces.</li>
+                <li><a href="https://www.figma.com/" target="_blank"><strong>Figma</strong></a>: A collaborative design tool for creating and prototyping UI/UX designs.</li>
+            </ul>
+    
+            <h3>3. Backend Development Tools</h3>
+            <p>For server-side development, these tools and frameworks are indispensable:</p>
+            <ul>
+                <li><a href="https://nodejs.org/" target="_blank"><strong>Node.js</strong></a>: A runtime environment for building scalable backend applications with JavaScript.</li>
+                <li><a href="https://expressjs.com/" target="_blank"><strong>Express.js</strong></a>: A minimal and flexible Node.js web application framework.</li>
+                <li><a href="https://www.djangoproject.com/" target="_blank"><strong>Django</strong></a>: A high-level Python framework for rapid backend development.</li>
+                <li><a href="https://rubyonrails.org/" target="_blank"><strong>Ruby on Rails</strong></a>: A server-side web application framework written in Ruby.</li>
+                <li><a href="https://www.postman.com/" target="_blank"><strong>Postman</strong></a>: A tool for testing and documenting APIs.</li>
+            </ul>
+    
+            <h3>4. Version Control & Collaboration</h3>
+            <p>Version control is crucial for team collaboration and code management. These tools are a must:</p>
+            <ul>
+                <li><a href="https://git-scm.com/" target="_blank"><strong>Git</strong></a>: The most widely used version control system.</li>
+                <li><a href="https://github.com/" target="_blank"><strong>GitHub</strong></a>: A platform for hosting and sharing code repositories.</li>
+                <li><a href="https://about.gitlab.com/" target="_blank"><strong>GitLab</strong></a>: An alternative to GitHub with built-in CI/CD capabilities.</li>
+                <li><a href="https://bitbucket.org/" target="_blank"><strong>Bitbucket</strong></a>: A Git repository management solution by Atlassian.</li>
+            </ul>
+    
+            <h3>5. Web Performance Optimization</h3>
+            <p>A fast website is a successful website. Use these tools to optimize your web performance:</p>
+            <ul>
+                <li><a href="https://developers.google.com/speed/pagespeed/insights" target="_blank"><strong>Google PageSpeed Insights</strong></a>: Analyzes your website’s performance and provides optimization suggestions.</li>
+                <li><a href="https://developers.google.com/web/tools/lighthouse" target="_blank"><strong>Lighthouse</strong></a>: An open-source tool for auditing web page quality.</li>
+                <li><a href="https://webpack.js.org/" target="_blank"><strong>Webpack</strong></a>: A module bundler for optimizing and bundling JavaScript files.</li>
+                <li><a href="https://gtmetrix.com/" target="_blank"><strong>GTmetrix</strong></a>: A tool for monitoring and improving website speed.</li>
+            </ul>
+    
+            <h3>6. Testing & Debugging Tools</h3>
+            <p>Ensure your code is bug-free and works across all platforms with these tools:</p>
+            <ul>
+                <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank"><strong>Chrome DevTools</strong></a>: Built into Google Chrome, it’s a must-have for debugging and testing web applications.</li>
+                <li><a href="https://jestjs.io/" target="_blank"><strong>Jest</strong></a>: A JavaScript testing framework for unit and integration testing.</li>
+                <li><a href="https://www.cypress.io/" target="_blank"><strong>Cypress</strong></a>: A modern end-to-end testing framework for web applications.</li>
+                <li><a href="https://www.browserstack.com/" target="_blank"><strong>BrowserStack</strong></a>: Test your website on real devices and browsers.</li>
+            </ul>
+    
+            <h3>7. Learning Resources</h3>
+            <p>Never stop learning! These websites offer tutorials, courses, and documentation to keep your skills sharp:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank"><strong>MDN Web Docs</strong></a>: Mozilla’s comprehensive resource for web development documentation.</li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank"><strong>freeCodeCamp</strong></a>: A free platform for learning coding through interactive projects.</li>
+                <li><a href="https://www.codecademy.com/" target="_blank"><strong>Codecademy</strong></a>: Offers interactive coding lessons for various programming languages.</li>
+                <li><a href="https://css-tricks.com/" target="_blank"><strong>CSS-Tricks</strong></a>: A blog with tips, tricks, and tutorials on CSS and frontend development.</li>
+                <li><a href="https://stackoverflow.com/" target="_blank"><strong>Stack Overflow</strong></a>: A Q&A platform for developers to ask questions and share knowledge.</li>
+            </ul>
+    
+            <h3>8. Design Inspiration & Assets</h3>
+            <p>Need inspiration or assets for your projects? Check out these resources:</p>
+            <ul>
+                <li><a href="https://dribbble.com/" target="_blank"><strong>Dribbble</strong></a>: A platform for designers to showcase their work and inspire others.</li>
+                <li><a href="https://www.behance.net/" target="_blank"><strong>Behance</strong></a>: Another great platform for design inspiration.</li>
+                <li><a href="https://unsplash.com/" target="_blank"><strong>Unsplash</strong></a>: Free high-quality stock photos for your projects.</li>
+                <li><a href="https://fontawesome.com/" target="_blank"><strong>Font Awesome</strong></a>: A library of free icons for web projects.</li>
+                <li><a href="https://fonts.google.com/" target="_blank"><strong>Google Fonts</strong></a>: A collection of free, open-source fonts for web use.</li>
+            </ul>
+    
+            <h3>9. Deployment & Hosting</h3>
+            <p>Once your project is ready, these platforms will help you deploy and host it:</p>
+            <ul>
+                <li><a href="https://www.netlify.com/" target="_blank"><strong>Netlify</strong></a>: A platform for deploying static websites and serverless functions.</li>
+                <li><a href="https://vercel.com/" target="_blank"><strong>Vercel</strong></a>: Ideal for deploying frontend projects, especially those built with Next.js.</li>
+                <li><a href="https://www.heroku.com/" target="_blank"><strong>Heroku</strong></a>: A cloud platform for deploying and managing web applications.</li>
+                <li><a href="https://aws.amazon.com/amplify/" target="_blank"><strong>AWS Amplify</strong></a>: A suite of tools for building and deploying full-stack applications.</li>
+                <li><a href="https://pages.github.com/" target="_blank"><strong>GitHub Pages</strong></a>: Free hosting for static websites directly from your GitHub repository.</li>
+            </ul>
+    
+            <h3>10. Miscellaneous Tools</h3>
+            <p>Here are some additional tools that can make your life easier:</p>
+            <ul>
+                <li><a href="https://caniuse.com/" target="_blank"><strong>Can I Use</strong></a>: Check browser compatibility for HTML, CSS, and JavaScript features.</li>
+                <li><a href="https://coolors.co/" target="_blank"><strong>Coolors</strong></a>: A color scheme generator for creating beautiful palettes.</li>
+                <li><a href="https://tinypng.com/" target="_blank"><strong>TinyPNG</strong></a>: Compress images without losing quality.</li>
+                <li><a href="https://jsonformatter.org/" target="_blank"><strong>JSON Formatter</strong></a>: Format and validate JSON data.</li>
+                <li><a href="https://regex101.com/" target="_blank"><strong>Regex101</strong></a>: Test and debug regular expressions.</li>
+            </ul>
+        </section>
+    
+        <section class="content-section">
+            <h2>Conclusion</h2>
+            <p>Modern web development is about creating fast, scalable, and user-friendly websites that meet the needs of today's digital audience. By following the steps outlined in this guide, you can build websites that stand out in terms of performance, accessibility, and user experience.</p>
+            <p>Start implementing these strategies today, and take your web development skills to the next level!</p>
+        </section>
+    </main>
+    
+    
+
+    <!-------------------- Testimonials Area (Start) -------------------->
+    <div class="testimonial" id="testimonial" style="padding: 2rem 5%;">
+
+        <div class="heading">
+            <h2><span>testimonials</span></h2>
+        </div>
+
+        <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-1.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        I had the pleasure of working with Darshil on a freelance project, and his expertise in web
+                        development exceeded all expectations. Darshil was highly professional, attentive to details,
+                        and always delivered work ahead of deadlines. His ability to understand the project requirements
+                        and turn ideas into reality was truly impressive. I would highly recommend Darshil to anyone
+                        seeking a reliable and skilled freelancer.
+                    </p>
+
+                    <div class="intro">
+                        <h3>jason roy</h3>
+                        <h5>web developer freelancer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-2.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        As a fellow entrepreneur, I’ve had the privilege of collaborating with [Business Owner's Name]
+                        on several occasions, and their dedication to their business is truly admirable. Their ability
+                        to innovate while maintaining a sharp focus on customer needs sets them apart in their industry.
+                        [Business Owner's Name] approaches every challenge with enthusiasm and determination, inspiring
+                        everyone they work with to strive for excellence. It’s always a pleasure to learn from their
+                        expertise and vision.
+                    </p>
+
+                    <div class="intro">
+                        <h3>evelyn jones</h3>
+                        <h5>A small business Owner</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-3.jpg" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        I had the privilege of working closely with Darshil during his time at Quad Softech, where he
+                        excelled as both a Web Developer and a Team Leader. Darshil consistently demonstrated
+                        exceptional technical skills, particularly in frontend development, and his leadership abilities
+                        were truly impressive. He has a remarkable ability to motivate his team and ensure that projects
+                        are delivered on time and to the highest standard. His professionalism and dedication make him
+                        an invaluable asset to any organization.
+                    </p>
+
+                    <div class="intro">
+                        <h3>Emilly Rival</h3>
+                        <h5>Supervisor</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-4.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        I had the pleasure of collaborating with Darshil on a web development project, and his
+                        professionalism and expertise truly stood out. He not only delivered the project ahead of
+                        schedule but also exceeded our expectations in terms of design and functionality. Darshil's
+                        clear communication and willingness to incorporate feedback made the entire process seamless and
+                        enjoyable.
+                    </p>
+
+                    <div class="intro">
+                        <h3>sarah</h3>
+                        <h5>freelancer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Working with Darshil has been an exceptional experience. His expertise, dedication, and
+                        innovative approach have significantly enhanced our projects. Darshil's attention to detail and
+                        ability to understand our unique requirements make him an indispensable partner. I highly
+                        recommend him to anyone seeking high-quality solutions and professional service.
+                    </p>
+
+                    <div class="intro">
+                        <h3>John Doe</h3>
+                        <h5>Software Engineer</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination1"></div>
+
+        </div>
+    </div>
+    <!-------------------- Testimonials Area (End) -------------------->
+
+    <!-------------------- Contact Area (Start) -------------------->
+    <div class="contact" id="contact" style="padding: 2rem 5%;">
+
+        <div class="heading">
+            <h2><span>contact</span> me</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="contact-info">
+
+                <h3>get in touch</h3>
+
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+                <div class="info-item">
+                    <h4>Phone:</h4>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+91 82385 92583</p>
+                    </div>
+                    <!-- <div class="detail">
+                            <div class="fas fa-phone"></div>
+                            <p>+111-222-333</p>
+                        </div> -->
+                </div>
+
+                <div class="info-item">
+                    <h4>email:</h4>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">darshilnavadiya.work@gmail.com</p>
+                    </div>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">darshilnavadiya5866@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>linkedin:</h4>
+                    <div class="detail">
+                        <div class="fab fa-linkedin"></div>
+                        <p class="linkedin">www.linkedin.com/in/darshil-navadiya-4088a7324</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>github:</h4>
+                    <div class="detail">
+                        <div class="fab fa-github"></div>
+                        <p class="github">www.github.com/Darshilnavadiya</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <form method="post" class="contact-form" id="contactUs-Form">
+                        
+                    <input type="text" name="name" class="box" id="name" placeholder="name" required />
+                    <input type="email" name="email" class="box" id="email" placeholder="email" required />
+                    <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
+                    <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                    <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                    
+                    <span class="alert" id="msg"></span>
+                    
+                </form> -->
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="6887540b-e9f2-4eb8-b843-92fad1aecd49">
+                <div>
+                    <input type="text" name="name" class="box" id="name" placeholder="Enter Your Name" />
+                </div>
+                <div>
+                    <input type="email" name="email" class="box" id="email" placeholder="Enter Your Email" required />
+                </div>
+                <div>
+                    <input type="text" name="subject" class="box" id="subject" placeholder="Enter Your Subject"
+                        required />
+                </div>
+                <div>
+                    <textarea cols="30" rows="10" name="comment" id="comment" class="box"
+                        placeholder="Enter Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                <span class="alert" id="msg"></span>
+            </form>
+
+        </div>
+
+    </div>
+    <!-------------------- Contact Area (End) -------------------->
+
+
+
+    <!-------------------- Footer Area (Start) -------------------->
+    <footer>
+        <div class="social">
+            <!-- <a href="#" class="fab fa-brands fa-meta"></a> -->
+            <a href="https://x.com/DarshilNavadiya" target="_blank" class="fab fa-brands fa-x-twitter"></a>
+            <a href="https://www.instagram.com/_darshil_5866_/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/darshil-navadiya-4088a7324/" target="_blank" class="fab fa-linkedin-in"></a>
+            <a href="https://github.com/Darshilnavadiya" target="_blank" class="fab fa-github" target="_blank"></a>
+        </div>
+
+        <div class="content">
+            <p>created by <span>Darshil</span> &copy; all rights reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+    <!-- JQuery -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/vendors/swiper/swiper.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Typed JS -->
+    <script src="assets/vendors/typed/typed.js"></script>
+
+    <!-- Custom Script File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/testi-slider.js"></script>
+    <script src="assets/js/blog-slider.js"></script>
+
+</body>
+</html>
